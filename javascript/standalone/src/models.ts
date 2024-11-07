@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-export type Voice = "alloy" | "shimmer" | "echo";
+export type Voice = "alloy" | "ash" | "ballad" | "coral" | "echo" | "sage" | "shimmer" | "verse";
 export type AudioFormat = "pcm16" | "g711-ulaw" | "g711-alaw";
 export type Modality = "text" | "audio";
 
@@ -74,7 +74,7 @@ export const MessageItemType = "message" as const;
 export type MessageItemType = typeof MessageItemType;
 
 export interface InputTextContentPart {
-  type: "input_text";
+  type: "input_text" | "text";
   text: string;
 }
 
